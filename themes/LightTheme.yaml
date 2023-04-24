@@ -1,16 +1,23 @@
 LightTheme:
   card-mod-theme: LightTheme
+  card-mod-view-yaml: |
+    "*:first-child$": |
+      #columns .column > * {
+        border: solid 1px red
+      }
+  card-mod-sidebar: |
+    .iron-selected paper-icon-item::before{
+      border-radius: 20px;
+    }
+
   modes:
     light:
-      card-mod-card: |
-        ha-card {
-          border: solid 5px red;
-        }
-      
       # Header:
       app-header-background-color: rgb(243, 245, 244)
       app-header-text-color: var(--primary-text-color)
       app-header-selection-bar-color: var(--primary-color)
+      app-header-border-bottom: solid 1px var(--divider-color)
+      header-height: 48px
 
       # Main Interface Colors
       primary-color: rgb(0, 94, 184)
