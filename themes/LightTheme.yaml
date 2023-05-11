@@ -17,12 +17,18 @@ LightTheme:
 
   card-mod-root: |
     :host {
-      
     }
+    .header{
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      background-color: rgb(243 245 244 / 73%) !important;
+    }
+
   card-mod-card: |
     ha-card:hover {
       box-shadow: rgba(94, 93, 102, 0.08) 1px 1px 0px 0px, rgba(94, 93, 102, 0.2) 2px 5px 10px 0px
     }
+  
   
   modes:
     light:
@@ -34,6 +40,7 @@ LightTheme:
       app-header-selection-bar-color: var(--primary-color)
       app-header-border-bottom: solid 1px var(--divider-color)
       header-height: 48px
+      mdc-top-app-bar-fixed-box-shadow: 0px 2px 11px 0px rgb(0 0 0 / 22%)
 
       # Main Interface Colors
       primary-color: rgb(0, 94, 184)
