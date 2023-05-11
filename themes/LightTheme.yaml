@@ -195,6 +195,7 @@ LightTheme:
     dark:
       # Header:
       app-header-background-color: rgb(48, 48, 49)
+      app-header-background-color_opacity: 48, 48, 49
       app-header-text-color: var(--primary-text-color)
       app-header-selection-bar-color: var(--primary-color)
       # Main Interface Colors
