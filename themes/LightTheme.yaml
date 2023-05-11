@@ -21,7 +21,7 @@ LightTheme:
     .header{
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
-      background-color: rgb(243 245 244 / 73%) !important;
+      background-color: rgba(var(--app-header-background-color_opacity), 0.75) !important;
     }
 
   card-mod-card: |
@@ -35,7 +35,7 @@ LightTheme:
       #lovelace-background: var(--background-image)
       # Header:
       app-header-background-color: rgb(243, 245, 244)
-      #app-header-background-color: rgb(255, 255, 255)
+      app-header-background-color_opacity: 243, 245, 244
       app-header-text-color: var(--primary-text-color)
       app-header-selection-bar-color: var(--primary-color)
       app-header-border-bottom: solid 1px var(--divider-color)
